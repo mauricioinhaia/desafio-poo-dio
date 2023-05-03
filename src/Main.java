@@ -8,6 +8,7 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
 
+        //Criando Cursos e Mentorias
         Curso curso1 = new Curso();
         curso1.setTitulo("Dev Front End");
         curso1.setDescricao("Trabalhe com React");
@@ -23,9 +24,7 @@ public class Main {
         mentoria1.setDescricao("Aprenda na pratica");
         mentoria1.setData(LocalDate.now());
 
-//        System.out.println(mentoria1);
-//        System.out.println(curso1);
-
+        //Criando o BootCamp
         Bootcamp bootcamp = new Bootcamp();
         bootcamp.setNome("Bootcamp Dev FullStack");
         bootcamp.setDescricao("Desenvolva aplicacoes completas");
@@ -33,6 +32,7 @@ public class Main {
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria1);
 
+        //Criando Devs e Atribuindo aos Bootcamps
         Dev devMauricio = new Dev();
         devMauricio.setNome("Maurice");
         devMauricio.inscreverBootcamp(bootcamp);
